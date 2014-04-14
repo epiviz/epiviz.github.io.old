@@ -1,16 +1,16 @@
-name: Herring Cove
-author: Herring Cove
+name: Epiviz
+author: Florin Chelaru and Hector Corrada Bravo
 markdown: redcarpet
 pygments: true
-baseurl: /herring-cove
-description: theme for jekyll
-github: http://www.github.com/arnp
+baseurl: /
+description: Interactive functional genomics data visualization
+github: http://www.github.com/epiviz
 twitter: http://www.twitter.com/
 facebook: http://www.facebook.com
 linkedin: http://www.linkedin.com
-email: rnpatel[at]me.com
+email: hcorrada[at]gmail.com
 location: 42°2'16"N   70°12'47"W
-disqus: diqus-username
+disqus: hcorrada
 
 ##Make sure to edit the above fields, especially for disqus.
 
