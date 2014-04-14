@@ -2,7 +2,7 @@ name: Epiviz
 author: Florin Chelaru and Hector Corrada Bravo
 markdown: redcarpet
 pygments: true
-baseurl: epiviz.github.io/
+baseurl: 
 description: Interactive functional genomics data visualization
 github: http://www.github.com/epiviz
 twitter: http://www.twitter.com/
