@@ -1,15 +1,8 @@
 ---
 layout: page
 id: mydi
-title: Chart API Tutorial
+title: Chart Plugin Tutorial
 ---
-
-<!--
-Chart API
-  Custom settings
-  Two display types: by feature and by location (plot and track)
-  Two types of measurements: feature and range (the first one has range data plus values associated to it)
--->
 
 **[See it in EpiViz]({{ site.epivizUiMain }}?ws=Y8kWxCO2Ajn&settings=http://rawgit.com/florin-chelaru/11017763/raw/029170a67f62bbd8a98dc38761a9cf363476fc40/my-epiviz-settings.js&script[]=http://rawgit.com/florin-chelaru/11017650/raw/93c16c0af3f3246c348c217d738f625c72de66b9/my-track-type.js&script[]=http://rawgit.com/florin-chelaru/11017610/raw/bbf488cebe8d0b35e23c993b8cd8a851430dd6dc/my-track.js)**
 
@@ -278,6 +271,12 @@ Chart API
   * `my-track.js`: [http://gist.github.com/florin-chelaru/11017610#file-my-track-js](http://gist.github.com/florin-chelaru/11017610#file-my-track-js)
   * `my-track-type.js`: [https://gist.github.com/florin-chelaru/11017650#file-my-track-type-js](https://gist.github.com/florin-chelaru/11017650#file-my-track-type-js)
   * `my-epiviz-settings.js`: [https://gist.github.com/florin-chelaru/11017763#file-my-epiviz-settings-js](https://gist.github.com/florin-chelaru/11017763#file-my-epiviz-settings-js)
+
+  In the Track Menu, notice the new type of visualization, called **My Track**
+
+  ![The new track in the Track Menu]({{ site.baseurl }}/img/scr_add_mytrack.png)
+
+  <img src="{{ site.baseurl }}/img/scr_mytrack.png" style="max-width: 100%" />
 
 ---
 
