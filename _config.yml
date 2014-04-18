@@ -1,6 +1,7 @@
 name: Epiviz Help Pages
 markdown: redcarpet
+highlighter: pygments
 pygments: true
 baseurl:
-
-
+epivizUiMain: http://epiviz-dev.cbcb.umd.edu/v2/ui/
+epivizDataMain: http://epiviz-dev.cbcb.umd.edu/v2/data/

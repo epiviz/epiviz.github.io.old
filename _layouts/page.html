@@ -1,20 +1,12 @@
+<!DOCTYPE html>
+<html>
 {% include head.html %}
 
-	<main>
-<div id="content">
-<div class="left">
-
-    	{{ content }}
-</div class="left">
-
-
-
-
-  	</main>
-
-<div class="right">
-	{% include nav.html %}
-</div class="right">
-
+<body>
+<div id="wrap" class="clearfix">
+    {% include navigation.html %}
+    {% include main.html %}
+</div>
 {% include foot.html %}
-  
+</body>
+</html>

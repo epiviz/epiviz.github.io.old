@@ -1,17 +1,24 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>{{ page.title }}</title>
-       <meta http-equiv="Content-Language" content="English" />
-       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-       <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css" >
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="description"
+          content="EpiViz is a scientific information visualization tool for genetic and epigenetic data, used to aid in the exploration and understanding of correlations between various genome features."/>
+    <meta name="keywords"
+          content="epiviz,epivizr,epigenetics,genetics,visualization,javascript,d3.js,websocket,jquery"/>
+    <meta property="og:title" content="EpiViz - Interactive Visual Analytics Tool for Functional Genomics Data"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="http://www.gravatar.com/avatar/e900a8e2f6022f1e1aaea0c85cb3611c.png"/>
+    <meta property="og:site_name" content="EpiViz"/>
+    <meta property="og:url" content="http://epiviz.cbcb.umd.edu"/>
+    <script src="{{ site.baseurl }}/scripts/prettify/prettify.js"></script>
+    <script src="{{ site.baseurl }}/scripts/prettify/lang-css.js"></script>
+    <script src="{{ site.baseurl }}/scripts/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-<div id="wrap">
-  <div id="header">
-    <h1><a href="#">Epiviz: interactive genomics data  visualization</a></h1>
-    <h2>{{ page.title }}</title>
-  </div id="header">
-  
+    <link type="text/css" rel="stylesheet" href="{{ site.baseurl }}/css/prettify-tomorrow.css" />
+    <link type="text/css" rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="{{ site.baseurl }}/css/jaguar.css" />
+    <link type="text/css" rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css" />
+</head>
