@@ -269,9 +269,7 @@ However, through EpiViz' plugin mechanism, users can add new data providers to i
 4. If using EpiViz on a remote server, plug in your scripts and settings file and start using them! (For more information, see [Plugging in external scripts and settings]({{ site.baseurl }}/plugins.html))
 
   **Example**
-
   * `my-data-provider.js`: [https://gist.github.com/florin-chelaru/11026256#file-my-data-provider-js](https://gist.github.com/florin-chelaru/11026256#file-my-data-provider-js)
-
   * `my-epiviz-settings-new-provider.js`: [https://gist.github.com/florin-chelaru/11026220#file-my-epiviz-settings-new-provider-js](https://gist.github.com/florin-chelaru/11026220#file-my-epiviz-settings-new-provider-js)
 
   In the measurement selection dialogs, notice the new data source, **my_datasource** and the new measurement, **My Measurement**
