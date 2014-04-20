@@ -1,6 +1,5 @@
 ---
 layout: page
-id: mydi
 title: Chart Plugin Tutorial
 ---
 
