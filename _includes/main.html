@@ -4,7 +4,7 @@
     <h3></h3>
     <section>
         <article class="readme">
-            <h1>{{ page.title }}</h1>
+            <h1>{% if page.logo %}{{ page.logo }}{% else %}{{ page.title }}{% endif %}</h1>
             {{ content }}
         </article>
     </section>

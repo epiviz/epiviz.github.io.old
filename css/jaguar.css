@@ -35,6 +35,7 @@ li {
   padding: 10px 15px;
   font: bold 1.25em Helvetica;
   color: #fff;
+  text-align: center;
 }
 .navigation .applicationName a {
   color: #fff;

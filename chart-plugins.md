@@ -1,11 +1,21 @@
 ---
 layout: page
-title: Chart Plugin Tutorial
+title: Chart Tutorial
 ---
 
-**[See it in EpiViz]({{ site.epivizUiMain }}?ws=Y8kWxCO2Ajn&settings=http://rawgit.com/florin-chelaru/11017763/raw/029170a67f62bbd8a98dc38761a9cf363476fc40/my-epiviz-settings.js&script[]=http://rawgit.com/florin-chelaru/11017650/raw/93c16c0af3f3246c348c217d738f625c72de66b9/my-track-type.js&script[]=http://rawgit.com/florin-chelaru/11017610/raw/bbf488cebe8d0b35e23c993b8cd8a851430dd6dc/my-track.js)**
+## Table of Contents
 
-## To create a new visualization
+[Manipulating charts](#manipulating-charts)
+
+[Creating a new visualization plugin](#new-visualization)
+
+<a name="manipulating-charts" />
+## Manipulating charts
+
+<a name="new-visualization" />
+## Creating a new visualization
+
+**[See it in EpiViz]({{ site.epivizUiMain }}?ws=Y8kWxCO2Ajn&settings=http://rawgit.com/florin-chelaru/11017763/raw/029170a67f62bbd8a98dc38761a9cf363476fc40/my-epiviz-settings.js&script[]=http://rawgit.com/florin-chelaru/11017650/raw/93c16c0af3f3246c348c217d738f625c72de66b9/my-track-type.js&script[]=http://rawgit.com/florin-chelaru/11017610/raw/bbf488cebe8d0b35e23c993b8cd8a851430dd6dc/my-track.js)**
 
 1. Create a class for the actual visualization
 
@@ -266,7 +276,6 @@ title: Chart Plugin Tutorial
 6. If using EpiViz on a remote server, plug in your scripts and settings file and start using them! (For more information, see [Plugging in external scripts and settings]({{ site.baseurl }}/plugins.html))
 
   **Example**
-
   * `my-track.js`: [http://gist.github.com/florin-chelaru/11017610#file-my-track-js](http://gist.github.com/florin-chelaru/11017610#file-my-track-js)
   * `my-track-type.js`: [https://gist.github.com/florin-chelaru/11017650#file-my-track-type-js](https://gist.github.com/florin-chelaru/11017650#file-my-track-type-js)
   * `my-epiviz-settings.js`: [https://gist.github.com/florin-chelaru/11017763#file-my-epiviz-settings-js](https://gist.github.com/florin-chelaru/11017763#file-my-epiviz-settings-js)
