@@ -289,7 +289,7 @@ li {
 .main table .description p {
   margin: 0;
 }
-.main table .optional {
+.main .optional {
   float: left;
   border-radius: 3px;
   background-color: #ddd!important;
