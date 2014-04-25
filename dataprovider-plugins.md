@@ -3,7 +3,7 @@ layout: page
 title: Data Provider Plugin Tutorial
 ---
 
-**[See it in EpiViz]({{ site.epivizUiMain }}?ws=IqvEuzLIiMd&settings=http://rawgit.com/florin-chelaru/11026220/raw/c72ce428c8d791235f5d12d2cc0f380a7d277f54/my-epiviz-settings-new-provider.js&script[]=https://rawgit.com/florin-chelaru/11026256/raw/5a74b74ba5610223d00d0e38f491efedcf5645f8/my-data-provider.js)**
+**[See it in EpiViz]({{ site.epivizUiMain }}?ws=IqvEuzLIiMd&settingsGist=11026220&gist[]=11026256)**
 
 In EpiViz, data can be retrieved simultaneously from any number of servers (like the UMD PHP server, or the Epivizr
 Websocket server). The proxies between the servers and the EpiViz UI are called **Data providers**. Currently, EpiViz
@@ -294,4 +294,4 @@ However, through EpiViz' plugin mechanism, users can add new data providers to i
 
 ---
 
-**[See it in EpiViz]({{ site.epivizUiMain }}?ws=IqvEuzLIiMd&settings=http://rawgit.com/florin-chelaru/11026220/raw/c72ce428c8d791235f5d12d2cc0f380a7d277f54/my-epiviz-settings-new-provider.js&script[]=https://rawgit.com/florin-chelaru/11026256/raw/5a74b74ba5610223d00d0e38f491efedcf5645f8/my-data-provider.js)**
+**[See it in EpiViz]({{ site.epivizUiMain }}?ws=IqvEuzLIiMd&settingsGist=11026220&gist[]=11026256)**

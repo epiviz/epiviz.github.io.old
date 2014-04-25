@@ -5,5 +5,5 @@ redcarpet:
 highlighter: pygments
 pygments: true
 baseurl:
-epivizUiMain: http://epiviz-dev.cbcb.umd.edu/
-epivizDataMain: http://epiviz-dev.cbcb.umd.edu/data/
+epivizUiMain: http://epiviz.cbcb.umd.edu/
+epivizDataMain: http://epiviz.cbcb.umd.edu/data/
