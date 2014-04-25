@@ -4,6 +4,8 @@ title: Plugging in external scripts and settings
 ---
 
 <!--
+
+**EpiViz** allows users to plug in new visualizations and data providers on the fly, by using the Charts API and
  To plug in your scripts and settings If using the EpiViz hosted on the UMD server, then you need to specify the two newly created charts as external scripts. To do that, create two Gist sources for each of them
 Example
 my-track.js: https://gist.github.com/florin-chelaru/11017610#file-my-track-js
