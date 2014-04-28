@@ -348,6 +348,12 @@ button that opens the options for that particular chart type.
   ...
   ```
 
+  Alternatively, create a script to override the default EpiViz settings and add the new chart type:
+
+  ```javascript
+  epiviz.EpiViz.SETTINGS.chartTypes.push('epiviz.plugins.charts.MyTrackType');
+  ```
+
 6. If using EpiViz on a remote server, plug in your scripts and settings file and start using them! (For more information, see [Plugging in external scripts and settings]({{ site.baseurl }}/plugins.html))
 
   **Example**
