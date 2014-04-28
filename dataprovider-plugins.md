@@ -3,7 +3,7 @@ layout: page
 title: Data Provider Plugin Tutorial
 ---
 
-**[See it in EpiViz]({{ site.epivizUiMain }}?ws=IqvEuzLIiMd&settingsGist=11026220&gist[]=11026256)**
+**[See it in EpiViz]({{ site.epivizUiMain }}?ws=IqvEuzLIiMd&gist[]=11026256&settings=default)**
 
 In EpiViz, data can be retrieved simultaneously from any number of servers (like the UMD PHP server, or the Epivizr
 Websocket server). The proxies between the servers and the EpiViz UI are called **Data providers**. Currently, EpiViz
@@ -294,4 +294,4 @@ However, through EpiViz' plugin mechanism, users can add new data providers to i
 
 ---
 
-**[See it in EpiViz]({{ site.epivizUiMain }}?ws=IqvEuzLIiMd&settingsGist=11026220&gist[]=11026256)**
+**[See it in EpiViz]({{ site.epivizUiMain }}?ws=IqvEuzLIiMd&gist[]=11026256&settings=default)**

@@ -90,7 +90,7 @@ button that opens the options for that particular chart type.
 ## Creating a new chart plugin
 </a>
 
-**[See it in EpiViz]({{ site.epivizUiMain }}?ws=Y8kWxCO2Ajn&settingsGist=11017763&gist[]=11017650)**
+**[See it in EpiViz]({{ site.epivizUiMain }}?ws=Y8kWxCO2Ajn&settings=default&gist[]=11017650)**
 
 1. Create a class for the actual visualization
 
@@ -351,8 +351,7 @@ button that opens the options for that particular chart type.
 6. If using EpiViz on a remote server, plug in your scripts and settings file and start using them! (For more information, see [Plugging in external scripts and settings]({{ site.baseurl }}/plugins.html))
 
   **Example**
-  * `my-track.js` and `my-track-type.js`: [https://gist.github.com/florin-chelaru/11017650#file-my-track-type-js](https://gist.github.com/florin-chelaru/11017650#file-my-track-type-js)
-  * `my-epiviz-settings.js`: [https://gist.github.com/florin-chelaru/11017763#file-my-epiviz-settings-js](https://gist.github.com/florin-chelaru/11017763#file-my-epiviz-settings-js)
+  * `my-track.js`, `my-track-type.js`, and `my-settings-overrides.js`: [https://gist.github.com/florin-chelaru/11017650](https://gist.github.com/florin-chelaru/11017650)
 
   In the Track Menu, notice the new type of visualization, called **My Track**
 
@@ -362,4 +361,4 @@ button that opens the options for that particular chart type.
 
 ---
 
-**[See it in EpiViz]({{ site.epivizUiMain }}?ws=Y8kWxCO2Ajn&settingsGist=11017763&gist[]=11017650)**
+**[See it in EpiViz]({{ site.epivizUiMain }}?ws=Y8kWxCO2Ajn&settings=default&gist[]=11017650)**
