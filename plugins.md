@@ -1,11 +1,30 @@
 ---
 layout: page
-title: Plugging in external scripts and settings
+title: Charts and Data Providers Plugins
 ---
+
+## Table of Contents
+
+[Plugging in external scripts and settings](#external-scripts-and-settings)
+
+[Creating a new Chart Plugin](#new-chart-plugin)
+
+[Creating a new Data Provider Plugin](#new-data-provider-plugin)
+
+<a name="external-scripts-and-settings">
+## Plugging in external scripts and settings
+</a>
+
+**EpiViz** allows users to plug in new visualizations and data providers on the fly, by using the **Charts API** and Data
+**Providers API**, without the need of downloading or installing anything on the local machine. The new visualizations
+and data providers can be used immediately, alongside existing ones. Also, users can override the default settings of the
+UI to adapt it to their own needs. Here's how to do it:
+
+1.
 
 <!--
 
-**EpiViz** allows users to plug in new visualizations and data providers on the fly, by using the Charts API and
+
  To plug in your scripts and settings If using the EpiViz hosted on the UMD server, then you need to specify the two newly created charts as external scripts. To do that, create two Gist sources for each of them
 Example
 my-track.js: https://gist.github.com/florin-chelaru/11017610#file-my-track-js
