@@ -8,14 +8,14 @@ The complete Python source code for this example can be found here: [https://git
 ---
 
 One of the key features of EpiViz is allowing users to plug in new data on the fly, using
-[Data Provider plugins]({{ site.baseurl }}/dataprovider-plugins.html). One powerful such plugin is the **WebSocket data
+[Data Provider plugins]({{ site.baseurl }}/plugins.html#new-data-provider-plugin). One powerful such plugin is the **WebSocket data
 provider**. This data provider offers an interface between EpiViz and any programming environment that supports
 [WebSocket](http://www.websocket.org/) connections. In R there is already [a Bioconductor library](http://www.bioconductor.org/packages/release/bioc/html/epivizr.html)
 that supports communication with EpiViz through WebSockets, called [Epivizr](http://www.bioconductor.org/packages/release/bioc/html/epivizr.html).
 
 In this tutorial, we go over the essentials of creating a new WebSocket endpoint for EpiViz. We choose [Python](https://www.python.org/)
 as an example programming environment, to emphasize the flexibility and power of the EpiViz framework. We create a
-simple program with the same functionality as ```epiviz.plugins.data.MyDataProvider```, from the [Data Provider Plugin Tutorial]({{ site.baseurl }}/dataprovider-plugins.html).
+simple program with the same functionality as ```epiviz.plugins.data.MyDataProvider```, from the [Data Provider Plugin Tutorial]({{ site.baseurl }}/plugins.html#new-data-provider-plugin).
 
 
 ## To connect to EpiViz using the WebSocket API
@@ -52,7 +52,7 @@ First we implement a subclass of `tornado.websocket.WebSocketHandler`.
   ```
 
 2. Create a class that can parse request strings (this is optional, but will make our work a lot easier). As described
-in the [Data Provider Plugin Tutorial]({{ site.baseurl }}/dataprovider-plugins.html), there are two types of request
+in the [Data Provider Plugin Tutorial]({{ site.baseurl }}/plugins.html#new-data-provider-plugin), there are two types of request
 actions in EpiViz: **Server Actions** and **UI Actions**.
 
   **Example**
