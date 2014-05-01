@@ -1,6 +1,10 @@
 ---
 layout: page
 title: Computed measurements
+sections: [
+  ["How to create computed measurements","#create-computed-measurements"],
+  ["Expression language reference","#expression-language-reference"],
+]
 ---
 
 ## Table of Contents

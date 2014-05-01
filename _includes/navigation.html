@@ -8,10 +8,20 @@
         {% for url in site.pageOrder %}
             {% for p in site.pages %}
                 {% if p.url == url %}
-        <li class="item" data-name="{{ p.title }}">
+        <li class="item" data-name="{{ p.url }}">
             <span class="title">
                 <a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
             </span>
+            {% if p.sections %}
+            <ul class="itemMembers">
+                <span class="subtitle">Sections</span>
+                {% for s in p.sections %}
+                <li>
+                    <a href="{{ site.baseurl }}{{ p.url }}{{ s[1] }}">{{ s[0] }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
         </li>
                 {% endif %}
             {% endfor %}
