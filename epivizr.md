@@ -32,5 +32,5 @@ The [`epivizr` github repository](http://github.com/epiviz/epivizr) contains the
 ## Non-blocking
 
 Epivizr (as of version 1.2) supports a non-blocking workflow on both UNIX-like and Windows systems where data is served to the webapp without blocking
-the R/bioc interactive session. Make sure you are using the latest version of the [httpuv package](http://cran.r-project.org/web/packages/httpuv/index.html) (version 1.3 or greater) to use this. (Thanks to the
+the R/bioc interactive session. Make sure you are using the latest version of the [httpuv package](http://cran.r-project.org/web/packages/httpuv/index.html) (version 1.3 or greater to use this. (Thanks to the
 [Rstudio](http://rstudio.org) folks for folding our daemonizing code into the main httpuv release).
