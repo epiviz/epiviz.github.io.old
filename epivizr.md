@@ -44,7 +44,7 @@ biocLite("epivizr")
 ## Try it out
 </a>
 
-The easiest way to try `epivizr` out is to follow the package vignette:
+The easiest way to try `epivizr` out is to [follow the package vignette](http://bioconductor.org/packages/release/bioc/vignettes/epivizr/inst/doc/IntroToEpivizr.html):
 
 ```{r}
 require(epivizr)
