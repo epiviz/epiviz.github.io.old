@@ -1,2 +1,6 @@
 _site
 .idea
+.ruby-*
+Gemfile.lock
+.DS_Store
+
