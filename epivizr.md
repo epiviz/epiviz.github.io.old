@@ -26,7 +26,7 @@ environment and epiviz. Objects in the R environment can be displayed as tracks 
 [Websocket data provider API]({{ site.baseurl }}/websocket.html) for communication between the browser Javascript client
 and the R environment.
 
-**Epiviz2** To use `epivizr` with the `EpiViz 2` APIs described here, you must use its [development branch](#development-version) (version 1.3.3 or higher)
+**Epiviz** To use `epivizr` with the `Epiviz` APIs described here, you must use its [development branch](#development-version) (version 1.3.3 or higher)
 
 <a name="installation-and-requirements">
 ## Installation and requirements

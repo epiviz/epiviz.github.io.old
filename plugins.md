@@ -20,21 +20,21 @@ sections: [
 ## Plugging in external scripts and settings
 </a>
 
-**EpiViz** allows users to plug in new visualizations and data providers on the fly, by using the **Charts API** and Data
+**Epiviz** allows users to plug in new visualizations and data providers on the fly, by using the **Charts API** and Data
 **Providers API**, without the need of downloading or installing anything on the local machine. The new visualizations
 and data providers can be used immediately, alongside existing ones. Also, users can override the default settings of the
 UI to adapt it to their own needs. Here's how to do it:
 
 1. **Create a plugin script.** Whether it's a new visualization, new data provider, or simply changing the default
-settings of EpiViz, you need to write a JavaScript script for it.
+settings of Epiviz, you need to write a JavaScript script for it.
 
   **Example**
 
-  A very simple example is a script that overrides some of the **EpiViz** default settings. A copy of the default settings
-  in EpiViz can be found here: [{{ site.epivizUiMain }}src/epiviz/default-settings.js]({{ site.epivizUiMain }}src/epiviz/default-settings.js).
+  A very simple example is a script that overrides some of the **Epiviz** default settings. A copy of the default settings
+  in Epiviz can be found here: [{{ site.epivizUiMain }}src/epiviz/default-settings.js]({{ site.epivizUiMain }}src/epiviz/default-settings.js).
   Choose a subset of settings you want to modify. In our example, we change the default colors for the **Scatter Plot**
   and set the initial circle radius for data points to be `0.02`, instead of `0.01`, which is the default. Also, we
-  change the settings so that EpiViz can only display scatter plots and genes tracks.
+  change the settings so that Epiviz can only display scatter plots and genes tracks.
 
   ```javascript
   // Set the default colors for the Scatter Plot to '#ed2d2e' and '#008c47'
@@ -47,26 +47,26 @@ settings of EpiViz, you need to write a JavaScript script for it.
   epiviz.EpiViz.SETTINGS.chartTypes = ['epiviz.plugins.charts.ScatterPlotType', 'epiviz.plugins.charts.GenesTrackType'];
   ```
 
-2. Host a script at an online location, and retrieve its web address. EpiViz allows users to use the `script` GET
+2. Host a script at an online location, and retrieve its web address. Epiviz allows users to use the `script` GET
 argument for scripts located anywhere on the internet.
 
   **Example:** We created a file called `settings-override-tutorial.js` and stored it at the following
   location:
   [http://epiviz.cbcb.umd.edu/help/settings-override-tutorial.js](http://epiviz.cbcb.umd.edu/help/settings-override-tutorial.js).
 
-3. EpiViz also implements the **[GitHub Gist API](https://developer.github.com/v3/gists/)**, allowing users
+3. Epiviz also implements the **[GitHub Gist API](https://developer.github.com/v3/gists/)**, allowing users
   to create and use **Gist** as plugins (see **[here](https://help.github.com/articles/creating-gists)** a short
   tutorial on how to create a Gist script).
 
   **Example:** For the purpose of this tutorial, we created a Gist script with the same
   contents here: [https://gist.github.com/florin-chelaru/7851244d2d9a9996403a](https://gist.github.com/florin-chelaru/7851244d2d9a9996403a).
 
-4. Open EpiViz using the location of the script as value for the `script` argument. **Note:** the `script` argument
+4. Open Epiviz using the location of the script as value for the `script` argument. **Note:** the `script` argument
 represents an array, so that multiple scripts can be provided at once. Thus, the format `script[]=<url>` should be used.
 
   **Example:** [http://epiviz.cbcb.umd.edu/?ws=wjRtqAK3GCd&settings=default&script[]=http://epiviz.cbcb.umd.edu/help/settings-override-tutorial.js](http://epiviz.cbcb.umd.edu/?ws=wjRtqAK3GCd&settings=default&script[]=http://epiviz.cbcb.umd.edu/help/settings-override-tutorial.js)
 
-  For **Gist** scripts, EpiViz allows users to provide just the Gist id. In background, EpiViz uses the GitHub Gist API to
+  For **Gist** scripts, Epiviz allows users to provide just the Gist id. In background, Epiviz uses the GitHub Gist API to
   retrieve the scripts using the given id, and use plug them in at start-up. The GET argument for Gist scripts is `gist`,
   and like `script`, it represents and array.
 
@@ -74,13 +74,13 @@ represents an array, so that multiple scripts can be provided at once. Thus, the
 
 **Overriding settings**
 
-In EpiViz, there are a few ways to override the default settings.
+In Epiviz, there are a few ways to override the default settings.
 
   * <p>The first one, demonstrated earlier, is to provide a `script` or `gist` GET argument.</p>
   * <p>The second one, is by creating an entire settings file to override the existing default settings. This works similar
   to the first method, only differing from it by the fact that it uses cookies to preserve the latest used settings. The
-  GET arguments used for this are `settings` and `settingsGist`. To revert to the default EpiViz settings, one should
-  open EpiViz with `settings=default`.</p>
+  GET arguments used for this are `settings` and `settingsGist`. To revert to the default Epiviz settings, one should
+  open Epiviz with `settings=default`.</p>
 
 In the tutorial examples for **Creating a new chart plugin** and **Creating a new data provider plugin** we provide more
 examples of plugging in various scripts and settings.
@@ -89,7 +89,7 @@ examples of plugging in various scripts and settings.
 ## Creating a new chart plugin
 </a>
 
-**[See it in EpiViz]({{ site.epivizUiMain }}?ws=Y8kWxCO2Ajn&settings=default&gist[]=11017650)**
+**[See it in Epiviz]({{ site.epivizUiMain }}?ws=Y8kWxCO2Ajn&settings=default&gist[]=11017650)**
 
 1. Create a class for the actual visualization
 
@@ -347,13 +347,13 @@ examples of plugging in various scripts and settings.
   ...
   ```
 
-  Alternatively, create a script to override the default EpiViz settings and add the new chart type:
+  Alternatively, create a script to override the default Epiviz settings and add the new chart type:
 
   ```javascript
   epiviz.EpiViz.SETTINGS.chartTypes.push('epiviz.plugins.charts.MyTrackType');
   ```
 
-6. If using EpiViz on a remote server, plug in your scripts and settings file and start using them!
+6. If using Epiviz on a remote server, plug in your scripts and settings file and start using them!
 
   **Example**
   * `my-track.js`, `my-track-type.js`, and `my-settings-overrides.js`: [https://gist.github.com/florin-chelaru/11017650](https://gist.github.com/florin-chelaru/11017650)
@@ -366,18 +366,18 @@ examples of plugging in various scripts and settings.
 
 ---
 
-**[See it in EpiViz]({{ site.epivizUiMain }}?ws=Y8kWxCO2Ajn&settings=default&gist[]=11017650)**
+**[See it in Epiviz]({{ site.epivizUiMain }}?ws=Y8kWxCO2Ajn&settings=default&gist[]=11017650)**
 
 <a name="new-data-provider-plugin">
 ## Creating a new Data Provider Plugin
 </a>
 
-**[See it in EpiViz]({{ site.epivizUiMain }}?ws=IqvEuzLIiMd&gist[]=11026256&settings=default)**
+**[See it in Epiviz]({{ site.epivizUiMain }}?ws=IqvEuzLIiMd&gist[]=11026256&settings=default)**
 
-In EpiViz, data can be retrieved simultaneously from any number of servers (like the UMD PHP server, or the Epivizr
-Websocket server). The proxies between the servers and the EpiViz UI are called **Data providers**. Currently, EpiViz
+In Epiviz, data can be retrieved simultaneously from any number of servers (like the UMD PHP server, or the Epivizr
+Websocket server). The proxies between the servers and the Epiviz UI are called **Data providers**. Currently, Epiviz
 has two predefined types of data providers: `epiviz.data.WebServerDataProvider`, and `epiviz.data.WebSocketDataProvider`.
-However, through EpiViz' plugin mechanism, users can add new data providers to interface other sources of data.
+However, through Epiviz' plugin mechanism, users can add new data providers to interface other sources of data.
 
 1. Create a new class and inherit `epiviz.data.DataProvider`.
 
@@ -427,7 +427,7 @@ However, through EpiViz' plugin mechanism, users can add new data providers to i
   * `data` is a map of key-value pairs of request/response arguments.
 
     For requests, `data` always has an `'action'` key, identifying the request type. The possible values for `'action'`
-    are defined in the EpiViz API in the enum type [`epiviz.data.Request.Action`]({{ site.baseurl }}/docs/epiviz.data.Request.html#Action).
+    are defined in the Epiviz API in the enum type [`epiviz.data.Request.Action`]({{ site.baseurl }}/docs/epiviz.data.Request.html#Action).
     The other request keys and values vary depending on the action.
 
     Actions are grouped in two categories - *Server Actions* (requests from the UI to the Data Provider) and *UI Actions* (requests from
@@ -633,13 +633,13 @@ However, through EpiViz' plugin mechanism, users can add new data providers to i
   ],
   ```
 
-  Alternatively, create a script to override the default EpiViz settings and add the new data provider:
+  Alternatively, create a script to override the default Epiviz settings and add the new data provider:
 
   ```javascript
   epiviz.EpiViz.SETTINGS.dataProviders.push('epiviz.plugins.data.MyDataProvider');
   ```
 
-4. If using EpiViz on a remote server, plug in your scripts and settings file and start using them!
+4. If using Epiviz on a remote server, plug in your scripts and settings file and start using them!
 
   **Example**
   * `my-data-provider.js` and `my-data-provider-settings-overrides.js`: [https://gist.github.com/florin-chelaru/11026256](https://gist.github.com/florin-chelaru/11026256)
@@ -666,4 +666,4 @@ However, through EpiViz' plugin mechanism, users can add new data providers to i
 
 ---
 
-**[See it in EpiViz]({{ site.epivizUiMain }}?ws=IqvEuzLIiMd&gist[]=11026256&settings=default)**
+**[See it in Epiviz]({{ site.epivizUiMain }}?ws=IqvEuzLIiMd&gist[]=11026256&settings=default)**

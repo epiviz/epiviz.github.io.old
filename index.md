@@ -1,7 +1,7 @@
 ---
 layout: default
-title: EpiViz
-logo: <img src="../img/epiviz_logo_large_white.png" wodth="191" height="41" alt="EpiViz" />
+title: Epiviz
+logo: <img src="../img/epiviz_logo_large_white.png" wodth="191" height="41" alt="Epiviz" />
 ---
 
 [**Epiviz**]({{ site.epivizUiMain }}) is an interactive visualization tool for functional genomics data. It supports
@@ -14,8 +14,8 @@ framework so users can add [d3](http://d3js.org/) visualizations. You can find m
 <iframe width="480" height="360" src="http://www.youtube.com/embed/099c4wUxozA" frameborder="1" allowfullscreen></iframe>
 
 The [**Epivizr** Bioconductor package](http://bioconductor.org/packages/release/bioc/html/epivizr.html) implements two-way
-communication between the `R/Bioconductor` computational genomics environment and EpiViz. Objects in an `R` session
-can be displayed as tracks or plots on EpiViz. Epivizr uses [WebSockets](http://www.websocket.org/) for communication
+communication between the `R/Bioconductor` computational genomics environment and Epiviz. Objects in an `R` session
+can be displayed as tracks or plots on Epiviz. Epivizr uses [WebSockets](http://www.websocket.org/) for communication
 between the browser `JavaScript` client and the `R` environment, the same technology underlying the popular
 [Shiny](http://www.rstudio.com/shiny/) system for authoring interactive web-based reports in `R`.
 
