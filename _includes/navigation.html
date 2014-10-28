@@ -1,5 +1,5 @@
 <div class="navigation">
-    <h3 class="applicationName"><a href="index.html"><img src="{{ site.baseurl }}img/epiviz_logo_large_black.png" wodth="191" height="41" alt="EpiViz" /></a></h3>
+    <h3 class="applicationName"><a href="{{ site.baseurl }}/index.html"><img src="{{ site.baseurl }}/img/epiviz_logo_large_black.png" width="191" height="41" alt="EpiViz" /></a></h3>
 
     <div class="search">
         <input id="search" type="text" class="form-control input-sm" placeholder="Search">
@@ -33,12 +33,12 @@
         </li>
 
 	<li class="item" data-name="Recent Posts">
-	  <ul class="list">
+	   <span class="title">
+	      <a href="{{ site.baseurl }}/index.html">Recent Posts</a></span>	 
+	  <ul>
 	      {% for post in site.posts limit: 5 %}
-	        <li class="item" data-name="{{ post.url }}">
-	          <span class="title">
+	        <li>
 	             <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-	          </span>
 	        </li>
 	      {% endfor %}
 	  </ul>

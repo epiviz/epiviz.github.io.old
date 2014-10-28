@@ -1,9 +1,13 @@
----
-layout: default
----
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<!DOCTYPE html>
+<html>
+{% include head.html %}
 
-<div class="post">
-{{ content }}
+<body>
+<div id="wrap" class="clearfix">
+    {% include navigation.html %}
+    {% include post_main.html %}
 </div>
+{% include foot.html %}
+</body>
+</html>
+
