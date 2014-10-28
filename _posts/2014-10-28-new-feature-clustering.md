@@ -5,7 +5,7 @@ date:   2014-10-28 12:00:00
 categories: features
 ---
 
-**[See it in Epiviz]({{ site.epivizUiMain }}?ws=UqaReWj5Sd&settings=default)**
+**[See it in {{ site.epiviz }}]({{ site.epivizUiMain }}?ws=UqaReWj5Sd&settings=default)**
 
 We implemented a new **Clustering** feature in the *Heatmap Plot*! You can use it to group together
 measurements using the values in the selected region. 
@@ -22,4 +22,4 @@ This causes the rows to be re-ordered according to the clustering, and a dendrog
 
 <img src="{{ site.baseurl }}/img/heatmap_clustering.png" style="max-width: 100%" alt="Heatmap Clustering" />
 
-**[See it in Epiviz]({{ site.epivizUiMain }}?ws=UqaReWj5Sd&settings=default)**
+**[See it in {{ site.epiviz }}]({{ site.epivizUiMain }}?ws=UqaReWj5Sd&settings=default)**

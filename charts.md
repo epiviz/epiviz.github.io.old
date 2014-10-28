@@ -19,7 +19,7 @@ sections: [
 ## Adding a chart to the workspace
 </a>
 
-1. Epiviz has two types of charts: *Plots*, that display data by feature, and *Tracks*, that display data by location.
+1. {{ site.epiviz }} has two types of charts: *Plots*, that display data by feature, and *Tracks*, that display data by location.
 For each of the two, it has a separate menu. Whether you want to add a *Plot* or a *Track*, open the corresponding menu,
 and select the chart you want to add. These menus expand dynamically, as the user adds more chart plugins.
 
@@ -58,7 +58,7 @@ the measurements in the heatmap measurements dialog will filter to: `colon norma
 ## Manipulating charts
 </a>
 
-The charts in Epiviz are all resizable, and all feature a number of options, some specific to the chart, some general.
+The charts in {{ site.epiviz }} are all resizable, and all feature a number of options, some specific to the chart, some general.
 In this section we go over a few of them.
 
 1. **Toggle Tooltip.** This button allows the user to toggle between showing and hiding tooltips on chart object hover.
@@ -67,7 +67,7 @@ In this section we go over a few of them.
 
   ![Tooltip]({{ site.baseurl }}/img/scr_tooltip.png)
 
-2. **Colors.** In Epiviz, colors in all charts can be customized.
+2. **Colors.** In {{ site.epiviz }}, colors in all charts can be customized.
   * Take, for example, a line track with two measurements: `Methylation Colon Cancer`, and `Methylation Colon Normal`.
 Initially, the first measurement is colored blue, and the second, red.<br/>
   <img alt="Line Track" src="{{ site.baseurl }}/img/scr_line_met_cancer_normal_red_blue.png" style="max-width: 100%" />
@@ -78,7 +78,7 @@ Initially, the first measurement is colored blue, and the second, red.<br/>
   ![Color Picker Dialog]({{ site.baseurl }}/img/scr_color_picker.png)
   <img alt="Line Track" src="{{ site.baseurl }}/img/scr_line_met_cancer_normal_green_red.png" style="max-width: 100%" />
 
-3. **Save Chart.** All charts in Epiviz are represented as [SVG](http://en.wikipedia.org/wiki/Scalable_Vector_Graphics),
+3. **Save Chart.** All charts in {{ site.epiviz }} are represented as [SVG](http://en.wikipedia.org/wiki/Scalable_Vector_Graphics),
 and can be saved to the local computer in various file formats: *PDF*, *PS*, *PNG*, *SVG*, and *EPS*. Click the *Save*
 button; in the dialog, choose the desired file format, and click *Ok*.
 
@@ -86,6 +86,6 @@ button; in the dialog, choose the desired file format, and click *Ok*.
 
   ![Save Chart Dialog]({{ site.baseurl }}/img/scr_save_chart_dialog.png)
 
-4. **Custom Settings.** Charts in Epiviz also have settings specific to the visualization type, allowing to customize
+4. **Custom Settings.** Charts in {{ site.epiviz }} also have settings specific to the visualization type, allowing to customize
 how many objects are displayed at a time, their size, axis boundaries, margins. Each chart has a *Custom settings*
 button that opens the options for that particular chart type.

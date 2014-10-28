@@ -7,3 +7,4 @@ baseurl:
 epivizUiMain: http://epiviz.cbcb.umd.edu/
 epivizDataMain: http://epiviz.cbcb.umd.edu/data/
 pageOrder: ["/index.html", "/charts.html", "/computed-measurements.html", "/epivizr.html", "/plugins.html", "/websocket.html"]
+epiviz: <span class="epiviz"></span>

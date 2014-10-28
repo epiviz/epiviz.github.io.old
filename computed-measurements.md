@@ -17,9 +17,9 @@ sections: [
 ## How to create computed measurements
 </a>
 
-**[See it in Epiviz]({{ site.epivizUiMain }}?ws=k5jQbrYsbPb&settings=default)**
+**[See it in {{ site.epiviz }}]({{ site.epivizUiMain }}?ws=k5jQbrYsbPb&settings=default)**
 
-**Epiviz** exposes a simple expression language that allows users to define new measurements as combinations of existing
+**{{ site.epiviz }}** exposes a simple expression language that allows users to define new measurements as combinations of existing
 ones. The expression language is implemented using *[a JavaScript expression evaluator](http://silentmatt.com/javascript-expression-evaluator/)*.
 This feature can be extremely handy in making simple tweaks in data analysis on the fly, without having to go back and
 forth to a programming environment.
@@ -27,7 +27,7 @@ forth to a programming environment.
 In the following example we show how to create a couple of simple computed measurements, in order to display the popular
 *[MA Plot](http://bioinfo.cipf.es/babelomicstutorial/maplot)* for *colon gene expression* of *normal* vs *cancer* tissues.
 
-1. Click the **Computed Measurements** button in the Epiviz toolbar. In the **Computed Measurements Dialog**, select the
+1. Click the **Computed Measurements** button in the {{ site.epiviz }} toolbar. In the **Computed Measurements Dialog**, select the
 *data source group* whose measurements will be used in creating the new one. Then click on **Next** to go to the
 **Expression tab**. For our example, we choose the `affymetrix_probeset` data source group.
 
@@ -58,7 +58,7 @@ identifier next to the measurement name to refer a particular measurement.  Here
  ![New scatter plot]({{ site.baseurl }}/img/scr_compms_newscatter.png)<br/>
  ![MA Plot]({{ site.baseurl }}/img/scr_compms_maplot.png)
 
-**[See it in Epiviz]({{ site.epivizUiMain }}?ws=k5jQbrYsbPb&settings=default)**
+**[See it in {{ site.epiviz }}]({{ site.epivizUiMain }}?ws=k5jQbrYsbPb&settings=default)**
 
 <a name="expression-language-reference">
 ## Expression language reference

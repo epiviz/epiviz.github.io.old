@@ -5,7 +5,7 @@ date:   2014-10-28 13:00:00
 categories: features
 ---
 
-**[See it in Epiviz]({{ site.epivizUiMain }}?ws=MaQiywcMkec&settings=default)**
+**[See it in {{ site.epiviz }}]({{ site.epivizUiMain }}?ws=MaQiywcMkec&settings=default)**
 
 Now visualizations' code can be customized in the UI, based on user needs!
 
@@ -38,4 +38,4 @@ Once happy with the changes, click *Save* and see the changes take effect immedi
 
 **The changes can be saved in the current workspace!**
 
-**[See it in Epiviz]({{ site.epivizUiMain }}?ws=MaQiywcMkec&settings=default)**
+**[See it in {{ site.epiviz }}]({{ site.epivizUiMain }}?ws=MaQiywcMkec&settings=default)**

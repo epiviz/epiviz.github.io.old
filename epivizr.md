@@ -22,11 +22,11 @@ sections: [
 ---
 
 The `epivizr` Bioconductor package implements two-way communication between the [R/Bioconductor](http://bioconductor.org)
-environment and epiviz. Objects in the R environment can be displayed as tracks or plots on Epiviz. Epivizr uses the
+environment and {{ site.epiviz }}. Objects in the R environment can be displayed as tracks or plots on {{ site.epiviz }}. Epivizr uses the
 [Websocket data provider API]({{ site.baseurl }}/websocket.html) for communication between the browser Javascript client
 and the R environment.
 
-**Epiviz** To use `epivizr` with the `Epiviz` APIs described here, you must use its [development branch](#development-version) (version 1.3.3 or higher)
+**{{ site.epiviz }}** To use `epivizr` with the `{{ site.epiviz }}` APIs described here, you must use its [development branch](#development-version) (version 1.3.3 or higher)
 
 <a name="installation-and-requirements">
 ## Installation and requirements

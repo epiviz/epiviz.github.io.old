@@ -5,7 +5,7 @@ date:   2014-08-03 19:46:32
 categories: papers
 ---
 
-Our first paper describing the Epiviz system was published today in
+Our first paper describing the {{ site.epiviz }} system was published today in
 [Nature Methods](http://www.nature.com/nmeth/journal/v11/n9/full/nmeth.3038.html).
 From the abstract:
 

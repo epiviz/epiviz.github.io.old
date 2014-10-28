@@ -88,3 +88,49 @@
 .main table {
     font-size: 12px;
 }
+
+@font-face {
+	font-family: 'bauhaus-light';
+	src:url('../fonts/03957_BauhausLightBT.eot?-4g15u5');
+	src:url('../fonts/03957_BauhausLightBT.eot?#iefix-4g15u5') format('embedded-opentype'),
+		url('../fonts/03957_BauhausLightBT.woff?-4g15u5') format('woff'),
+		url('../fonts/03957_BauhausLightBT.ttf?-4g15u5') format('truetype'),
+		url('../fonts/03957_BauhausLightBT.svg?-4g15u5#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'bauhaus-medium';
+	src:url('../fonts/03958_BauhausMediumBT.eot?-4g15u5');
+	src:url('../fonts/03958_BauhausMediumBT.eot?#iefix-4g15u5') format('embedded-opentype'),
+		url('../fonts/03958_BauhausMediumBT.woff?-4g15u5') format('woff'),
+		url('../fonts/03958_BauhausMediumBT.ttf?-4g15u5') format('truetype'),
+		url('../fonts/03958_BauhausMediumBT.svg?-4g15u5#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.epiviz {
+  speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+  font-size: 1.25em;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.epiviz:before {
+  font-family: 'bauhaus-medium';
+  content: "Epi";
+}
+
+.epiviz:after {
+  font-family: 'bauhaus-light';
+  content: "viz";
+}
