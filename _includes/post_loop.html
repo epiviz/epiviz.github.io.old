@@ -1,0 +1,5 @@
+{% for post in site.posts limit: 10 %}
+<span class="title">
+<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+</span>
+{% endfor %}

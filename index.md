@@ -18,3 +18,7 @@ communication between the `R/Bioconductor` computational genomics environment an
 can be displayed as tracks or plots on EpiViz. Epivizr uses [WebSockets](http://www.websocket.org/) for communication
 between the browser `JavaScript` client and the `R` environment, the same technology underlying the popular
 [Shiny](http://www.rstudio.com/shiny/) system for authoring interactive web-based reports in `R`.
+
+## Recent Posts
+
+{% include post_loop.html %}
