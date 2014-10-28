@@ -31,5 +31,17 @@
                 <a href="{{ site.baseurl }}/docs/index.html">Code Documentation</a>
             </span>
         </li>
+
+	<li class="item" data-name="Recent Posts">
+	  <ul class="list">
+	      {% for post in site.posts limit: 5 %}
+	        <li class="item" data-name="{{ post.url }}">
+	          <span class="title">
+	             <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+	          </span>
+	        </li>
+	      {% endfor %}
+	  </ul>
+	</li>
     </ul>
 </div>
