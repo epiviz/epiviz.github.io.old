@@ -1,5 +1,12 @@
 {% for post in site.posts limit: 10 %}
 <span class="title">
-<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+<h2> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> </h2>
+<h4> {{ post.date | date_to_long_string }}</h4>
+<p>
+{{ post.content | truncatewords: 30 }}
+</p>
+<p>
+  <a href="{{ site.baseurl }}{{ post.url }}">Read more...</a>
+</p>
 </span>
 {% endfor %}
