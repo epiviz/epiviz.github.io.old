@@ -10,7 +10,9 @@ Version 1.4 of [`epivizr`](http://www.bioconductor.org/packages/release/bioc/htm
 
 Previous versions of `epivizr` used the {{ site.epiviz }} web application hosted at the University of Maryland as the front-end for UI. In this new version, we bundle the `JavaScript` source for the {{ site.epiviz }} UI in the `epivizr` package which allows `R` to serve as it's own web host. Like [Shiny](http://shiny.rstudio.com/), we use the `httpuv` package to serve the interactive application. In fact, lots of thanks to [Joe Cheng](http://github.com/jcheng5) and [RStudio](http://rstudio.com) for helping to make this happen!
 
-A genome browser without a genome is not very useful, so you need to tell it about the genome annotation you want to use. One place in `Bioconductor` where you can get genome annotation information is in their `OrganismDb` packages. The `startStandalone` function can take an object of this class and start the UI with that genome and its gene annotation loaded. Here's how you can browse the mouse genome with Bioconductor:
+A genome browser without a genome is not very useful, so you need to tell it about the genome annotation you want to use. One place in `Bioconductor` where you can get genome annotation information is in their `OrganismDb` packages. 
+
+(Make sure you have version 1.4.2 installed to follow along! Just run `biocLite("epivizr")` to get it). The `startStandalone` function can take an object of this class and start the UI with that genome and its gene annotation loaded. Here's how you can browse the mouse genome with Bioconductor:
 
 ```r
 library(epivizr)
@@ -18,7 +20,7 @@ library(Mus.musculus)
 
 # this call makes the gene annotation from Mus.musculus, 
 # takes a couple of seconds (see more info below)
-mgr <- startStandalone(Mus.musculus, "mm10", keepSeqlevels=paste0("chr",c(1:19,"X","Y"))
+mgr <- startStandalone(Mus.musculus, "mm10", keepSeqlevels=paste0("chr",c(1:19,"X","Y")))
 mgr$stopServer()
 ```
 
