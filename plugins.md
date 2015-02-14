@@ -36,6 +36,27 @@ settings of {{ site.epiviz }}, you need to write a JavaScript script for it.
   and set the initial circle radius for data points to be `0.02`, instead of `0.01`, which is the default. Also, we
   change the settings so that {{ site.epiviz }} can only display scatter plots and genes tracks.
 
+  {{ site.epiviz }}:
+
+  ```javascript
+  // Create a new color palette
+  var myPalette = new epiviz.ui.charts.ColorPalette(['#ed2d2e', '#008c47'], 'My Palette', 'my-palette');
+  epiviz.Config.SETTINGS.colorPalettes.push(myPalette);
+
+  // Set the default colors for the Scatter Plot to '#ed2d2e' and '#008c47'
+  epiviz.Config.SETTINGS.chartSettings['epiviz.plugins.charts.ScatterPlot']['colors'] = 'my-palette';
+
+  // Set the Scatter Plot custom setting circleRadiusRatio to 0.02
+  epiviz.Config.SETTINGS.chartCustomSettings['epiviz.plugins.charts.ScatterPlot']['circleRadiusRatio'] = 0.02;
+
+  // Tell EpiViz to only show two types of charts: Scatter Plots and Genes Tracks
+  epiviz.Config.SETTINGS.chartTypes = [
+    'epiviz.plugins.charts.ScatterPlotType',
+    'epiviz.plugins.charts.GenesTrackType'];
+  ```
+
+  {{ site.epiviz2 }}:
+
   ```javascript
   // Set the default colors for the Scatter Plot to '#ed2d2e' and '#008c47'
   epiviz.EpiViz.SETTINGS.chartSettings['epiviz.plugins.charts.ScatterPlot']['colors'] = new epiviz.ui.charts.ColorPalette(['#ed2d2e', '#008c47']);
@@ -47,36 +68,27 @@ settings of {{ site.epiviz }}, you need to write a JavaScript script for it.
   epiviz.EpiViz.SETTINGS.chartTypes = ['epiviz.plugins.charts.ScatterPlotType', 'epiviz.plugins.charts.GenesTrackType'];
   ```
 
-2. Host a script at an online location, and retrieve its web address. {{ site.epiviz }} allows users to use the `script` GET
-argument for scripts located anywhere on the internet.
-
-  **Example:** We created a file called `settings-override-tutorial.js` and stored it at the following
-  location:
-  [http://epiviz.cbcb.umd.edu/help/settings-override-tutorial.js](http://epiviz.cbcb.umd.edu/help/settings-override-tutorial.js).
-
-3. {{ site.epiviz }} also implements the **[GitHub Gist API](https://developer.github.com/v3/gists/)**, allowing users
+2. {{ site.epiviz }} also implements the **[GitHub Gist API](https://developer.github.com/v3/gists/)**, allowing users
   to create and use **Gist** as plugins (see **[here](https://help.github.com/articles/creating-gists)** a short
   tutorial on how to create a Gist script).
 
   **Example:** For the purpose of this tutorial, we created a Gist script with the same
-  contents here: [https://gist.github.com/florin-chelaru/7851244d2d9a9996403a](https://gist.github.com/florin-chelaru/7851244d2d9a9996403a).
+  contents here ({{ site.epiviz }}): [http://gist.github.com/fa247476e6d9b4efb76a](http://gist.github.com/fa247476e6d9b4efb76a)
+  ({{ site.epiviz2 }}): [http://gist.github.com/7851244d2d9a9996403a](http://gist.github.com/7851244d2d9a9996403a).
 
-4. Open {{ site.epiviz }} using the location of the script as value for the `script` argument. **Note:** the `script` argument
-represents an array, so that multiple scripts can be provided at once. Thus, the format `script[]=<url>` should be used.
+3. Open {{ site.epiviz }} using the id of the GitHub Gist script as value for the `gist` argument. **Note:** the `gist` argument
+represents an array, so that multiple scripts can be provided at once. Thus, the format `gist[]=<gist id>` should be used. In
+background, {{ site.epiviz }} uses the GitHub Gist API to retrieve the scripts using the given id, and use plug them in at start-up.
 
-  **Example:** [http://epiviz.cbcb.umd.edu/?ws=wjRtqAK3GCd&settings=default&script[]=http://epiviz.cbcb.umd.edu/help/settings-override-tutorial.js](http://epiviz.cbcb.umd.edu/?ws=wjRtqAK3GCd&settings=default&script[]=http://epiviz.cbcb.umd.edu/help/settings-override-tutorial.js)
+  **Example:** ({{ site.epiviz }}) [{{ site.epivizUiMain }}?ws=wjRtqAK3GCd&settings=default&gist[]=fa247476e6d9b4efb76a]({{ site.epivizUiMain }}?ws=wjRtqAK3GCd&settings=default&gist[]=fa247476e6d9b4efb76a)
 
-  For **Gist** scripts, {{ site.epiviz }} allows users to provide just the Gist id. In background, {{ site.epiviz }} uses the GitHub Gist API to
-  retrieve the scripts using the given id, and use plug them in at start-up. The GET argument for Gist scripts is `gist`,
-  and like `script`, it represents and array.
-
-  **Example:** [http://epiviz.cbcb.umd.edu/?ws=wjRtqAK3GCd&settings=default&gist[]=7851244d2d9a9996403a](http://epiviz.cbcb.umd.edu/?ws=wjRtqAK3GCd&settings=default&gist[]=7851244d2d9a9996403a)
+  **Example:** ({{ site.epiviz2 }}) [{{ site.epiviz2UiMain }}?ws=wjRtqAK3GCd&settings=default&gist[]=7851244d2d9a9996403a]({{ site.epiviz2UiMain }}?ws=wjRtqAK3GCd&settings=default&gist[]=7851244d2d9a9996403a)
 
 **Overriding settings**
 
 In {{ site.epiviz }}, there are a few ways to override the default settings.
 
-  * <p>The first one, demonstrated earlier, is to provide a `script` or `gist` GET argument.</p>
+  * <p>The first one, demonstrated earlier, is to provide a `gist` GET argument.</p>
   * <p>The second one, is by creating an entire settings file to override the existing default settings. This works similar
   to the first method, only differing from it by the fact that it uses cookies to preserve the latest used settings. The
   GET arguments used for this are `settings` and `settingsGist`. To revert to the default {{ site.epiviz }} settings, one should
@@ -89,7 +101,9 @@ examples of plugging in various scripts and settings.
 ## Creating a new chart plugin
 </a>
 
-**[See it in {{ site.epiviz }}]({{ site.epivizUiMain }}?ws=Y8kWxCO2Ajn&settings=default&gist[]=11017650)**
+**[See it in {{ site.epiviz }}]({{ site.epivizUiMain }}?ws=Y8kWxCO2Ajn&settings=default&gist[]=9cff81ce56ba153f0b72)**
+
+**[See it in {{ site.epiviz2 }}]({{ site.epiviz2UiMain }}?ws=Y8kWxCO2Ajn&settings=default&gist[]=11017650)**
 
 1. Create a class for the actual visualization
 
@@ -356,7 +370,7 @@ examples of plugging in various scripts and settings.
 6. If using {{ site.epiviz }} on a remote server, plug in your scripts and settings file and start using them!
 
   **Example**
-  * `my-track.js`, `my-track-type.js`, and `my-settings-overrides.js`: [https://gist.github.com/florin-chelaru/11017650](https://gist.github.com/florin-chelaru/11017650)
+  * `my-track.js`, `my-track-type.js`, and `my-settings-overrides.js`: [http://gist.github.com/9cff81ce56ba153f0b72](http://gist.github.com/9cff81ce56ba153f0b72)
 
   In the Track Menu, notice the new type of visualization, called **My Track**
 
@@ -366,13 +380,17 @@ examples of plugging in various scripts and settings.
 
 ---
 
-**[See it in {{ site.epiviz }}]({{ site.epivizUiMain }}?ws=Y8kWxCO2Ajn&settings=default&gist[]=11017650)**
+**[See it in {{ site.epiviz }}]({{ site.epivizUiMain }}?ws=Y8kWxCO2Ajn&settings=default&gist[]=9cff81ce56ba153f0b72)**
+
+**[See it in {{ site.epiviz2 }}]({{ site.epiviz2UiMain }}?ws=Y8kWxCO2Ajn&settings=default&gist[]=11017650)**
 
 <a name="new-data-provider-plugin">
 ## Creating a new Data Provider Plugin
 </a>
 
-**[See it in {{ site.epiviz }}]({{ site.epivizUiMain }}?ws=IqvEuzLIiMd&gist[]=11026256&settings=default)**
+**[See it in {{ site.epiviz }}]({{ site.epivizUiMain }}?ws=WRIOVgCREuu&gist[]=63dce2a92d80f57637c6&settings=default)**
+
+**[See it in {{ site.epiviz2 }}]({{ site.epiviz2UiMain }}?ws=IqvEuzLIiMd&gist[]=11026256&settings=default)**
 
 In {{ site.epiviz }}, data can be retrieved simultaneously from any number of servers (like the UMD PHP server, or the Epivizr
 Websocket server). The proxies between the servers and the {{ site.epiviz }} UI are called **Data providers**. Currently, {{ site.epiviz }}
@@ -642,7 +660,7 @@ However, through {{ site.epiviz }}' plugin mechanism, users can add new data pro
 4. If using {{ site.epiviz }} on a remote server, plug in your scripts and settings file and start using them!
 
   **Example**
-  * `my-data-provider.js` and `my-data-provider-settings-overrides.js`: [https://gist.github.com/florin-chelaru/11026256](https://gist.github.com/florin-chelaru/11026256)
+  * `my-data-provider.js` and `my-data-provider-settings-overrides.js`: [http://gist.github.com/63dce2a92d80f57637c6](http://gist.github.com/63dce2a92d80f57637c6)
 
   In the measurement selection dialogs, notice the new data source, **my_datasource** and the new measurement, **My Measurement**
 
@@ -666,4 +684,6 @@ However, through {{ site.epiviz }}' plugin mechanism, users can add new data pro
 
 ---
 
-**[See it in {{ site.epiviz }}]({{ site.epivizUiMain }}?ws=IqvEuzLIiMd&gist[]=11026256&settings=default)**
+**[See it in {{ site.epiviz }}]({{ site.epivizUiMain }}?ws=WRIOVgCREuu&gist[]=63dce2a92d80f57637c6&settings=default)**
+
+**[See it in {{ site.epiviz2 }}]({{ site.epiviz2UiMain }}?ws=IqvEuzLIiMd&gist[]=11026256&settings=default)**

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Epiviz
-logo: <img src="../img/epiviz_logo_large_white.png" wodth="191" height="41" alt="Epiviz" />
+logo: <img src="../img/epiviz_logo_large_white.png" width="191" height="41" alt="Epiviz" />
 ---
 
 [**{{ site.epiviz }}**]({{ site.epivizUiMain }}) is an interactive visualization tool for functional genomics data. It supports

@@ -7,6 +7,8 @@ categories: features
 
 **[See it in {{ site.epiviz }}]({{ site.epivizUiMain }}?ws=MaQiywcMkec&settings=default)**
 
+**[See it in {{ site.epiviz2 }}]({{ site.epiviz2UiMain }}?ws=MaQiywcMkec&settings=default)**
+
 Now visualizations' code can be customized in the UI, based on user needs!
 
 To do it, simply click on the *Edit code* button on any of the available charts: <img src="{{ site.baseurl }}/img/edit_code_button.png" alt="Edit code button" />
@@ -39,3 +41,5 @@ Once happy with the changes, click *Save* and see the changes take effect immedi
 **The changes can be saved in the current workspace!**
 
 **[See it in {{ site.epiviz }}]({{ site.epivizUiMain }}?ws=MaQiywcMkec&settings=default)**
+
+**[See it in {{ site.epiviz2 }}]({{ site.epiviz2UiMain }}?ws=MaQiywcMkec&settings=default)**

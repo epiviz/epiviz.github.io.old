@@ -4,7 +4,9 @@ redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 highlighter: pygments
 baseurl:
-epivizUiMain: http://epiviz.cbcb.umd.edu/
+epivizUiMain: http://epiviz.cbcb.umd.edu/3/
 epivizDataMain: http://epiviz.cbcb.umd.edu/data/
+epiviz: <span class="epiviz"></span>&nbsp;3
+epiviz2UiMain: http://epiviz.cbcb.umd.edu/2/
+epiviz2: <span class="epiviz"></span>&nbsp;2
 pageOrder: ["/index.html", "/charts.html", "/computed-measurements.html", "/epivizr.html", "/plugins.html", "/websocket.html"]
-epiviz: <span class="epiviz"></span>

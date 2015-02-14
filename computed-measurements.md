@@ -19,6 +19,8 @@ sections: [
 
 **[See it in {{ site.epiviz }}]({{ site.epivizUiMain }}?ws=k5jQbrYsbPb&settings=default)**
 
+**[See it in {{ site.epiviz2 }}]({{ site.epiviz2UiMain }}?ws=k5jQbrYsbPb&settings=default)**
+
 **{{ site.epiviz }}** exposes a simple expression language that allows users to define new measurements as combinations of existing
 ones. The expression language is implemented using *[a JavaScript expression evaluator](http://silentmatt.com/javascript-expression-evaluator/)*.
 This feature can be extremely handy in making simple tweaks in data analysis on the fly, without having to go back and
@@ -59,6 +61,8 @@ identifier next to the measurement name to refer a particular measurement.  Here
  ![MA Plot]({{ site.baseurl }}/img/scr_compms_maplot.png)
 
 **[See it in {{ site.epiviz }}]({{ site.epivizUiMain }}?ws=k5jQbrYsbPb&settings=default)**
+
+**[See it in {{ site.epiviz2 }}]({{ site.epiviz2UiMain }}?ws=k5jQbrYsbPb&settings=default)**
 
 <a name="expression-language-reference">
 ## Expression language reference
