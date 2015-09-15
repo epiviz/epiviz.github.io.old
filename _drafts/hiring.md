@@ -5,11 +5,11 @@ categories: epiviz
 ---
 
 We're looking for a Data Scientist to make Epiviz better, stronger and faster! This is a full-time
-position (officially Faculty Research Assistant) within the [Center for Bioinformatics and Computational Biology (CBCB)](http://cbcb.umd.edu) at the University of Maryland in College Park. You will work along faculty in CBCB and the [Human-Computer Interaction Lab](http://hcil.umd.edu) in developing state-of-the-art genomic data visual analytics software tools.
+position (officially Faculty Research Assistant) within the [Center for Bioinformatics and Computational Biology (CBCB)](http://cbcb.umd.edu) at the University of Maryland in College Park. You will work along faculty in CBCB and the [Human-Computer Interaction Lab](http://www.cs.umd.edu/hcil/) in developing state-of-the-art genomic data visual analytics software tools.
 
 Responsibilities:
 
-1) *Develop Software*: design, implement, test and deploy code for the [Epiviz](http://cbcb.umd.edu/help) project.  
+1) *Develop Software*: design, implement, test and deploy code for the [Epiviz](http://epiviz.cbcb.umd.edu/help) project.  
 2) *Do Research*: apply interactive visualization tools as part of collaborative projects in genomics. Design and implement new visual analytics methods along with faculty, graduate and undergraduate students at UMD.  
 3) *Share your work*: provide support for users, participate in interactive visualization efforts of the [Bioconductor](http://bioconductor.org) project.
 
